@@ -1,7 +1,7 @@
-version : 0.0
+version: 0.0
 os: linux
 files:
-  - source :/
+  - source: /
     destination: /home/ec2-user/express-app
 hooks:
   ApplicationStop:
@@ -15,5 +15,4 @@ hooks:
   ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
-      runas: ec2-user  
-
+      runas: ec2-user
